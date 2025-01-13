@@ -4,51 +4,87 @@
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![GitHub Stars](https://img.shields.io/github/stars/attendora?style=social)](https://github.com/attendora)
 
-👋 Hi there! **Attendora** is an open-source platform designed to simplify event management, attendee tracking, and data analysis. Whether you're organizing a small meetup or a large conference, Attendora provides the tools you need to make your event a success.
+👋 Hi there! **Attendora** is an innovative attendance monitoring system designed to simplify and secure the process of tracking attendance in educational institutions. By leveraging cutting-edge technologies like **facial recognition**, **RFID**, and **IoT**, Attendora ensures a seamless, fraud-resistant, and scalable solution for attendance management.
 
 ---
 
 ## About Attendora 🌟
 
-At **Attendora**, we believe that managing events should be seamless, efficient, and enjoyable. Our mission is to empower event organizers with a suite of tools that streamline planning, enhance attendee engagement, and provide actionable insights. All our tools are open-source, customizable, and built with modern technologies.
+The **Attendora** project was born out of the need to address the inefficiencies and vulnerabilities of manual attendance systems. Traditional methods are prone to disturbances, fraud, and data compromise, making them unreliable and difficult to analyze. Attendora solves these challenges by providing a secure, automated, and scalable attendance monitoring system.
+
+Our mission is to:
+- **Simplify attendance tracking** with a seamless user experience.
+- **Prevent fraud** using advanced biometric and RFID technologies.
+- **Secure data** with end-to-end encryption and robust authentication mechanisms.
 
 ---
 
-## Our Projects 🛠️
+## Key Features 🚀
 
-Here are the core components of the Attendora platform:
+- **Seamless Check-in Process**: Effortless attendance tracking using facial recognition and RFID.
+- **Fraud Prevention**: On-device detection and backend rechecks to ensure authenticity.
+- **Scalable Infrastructure**: Supports over **1,000 devices per server** (1 CPU, 1GB RAM).
+- **Secure Data Handling**: End-to-end TLS encryption, biometric authentication, and data encryption at rest.
+- **Real-time Notifications**: Alerts for faulty attempts or fraudulent activities.
+- **Administrative Actions**: Tools for administrators to manage and act on fraudulent activities.
 
-### 1. [Attendora Dashboard](https://github.com/attendora/attendora-dashboard)
-- **Description**: A user-friendly web-based dashboard for managing events, attendees, and analytics.
-- **Tech Stack**: React, TypeScript, TailwindCSS
-- **Features**:
-  - Real-time event tracking
-  - Attendee management
-  - Interactive analytics and reporting
+---
 
-### 2. [Attendora Box](https://github.com/attendora/attendora-box)
-- **Description**: The backend service that powers Attendora, handling business logic, data processing, and integrations.
-- **Tech Stack**: Node.js, Express, MongoDB
-- **Features**:
-  - Modular and scalable architecture
-  - RESTful APIs for seamless integration
-  - Secure data handling
+## Tech Stack 🛠️
 
-### 3. [Attendora API](https://github.com/attendora/attendora-api)
-- **Description**: A powerful API for developers to integrate Attendora's functionality into their own applications.
-- **Tech Stack**: FastAPI, Python, Docker
-- **Features**:
-  - Well-documented endpoints
-  - Support for webhooks and real-time updates
-  - Scalable and secure
+### Embedded Systems
+- **ESP8266 & ESP32**: Powerful chips enabling network connectivity.
+- **MFRC522**: Reliable RFID reader for attendance tracking.
+- **OV2640**: Battle-tested camera for IoT applications and facial recognition.
 
-### 4. [Attendora Recon](https://github.com/attendora/attendora-recon)
-- **Description**: A data gathering and analysis tool for event organizers to gain insights into attendee behavior and event performance.
-- **Tech Stack**: Go, Elasticsearch, Redis
-- **Features**:
-  - Fast data processing
-  - Customizable data pipelines
-  - Real-time dashboards
+### Backend
+- **Node.js & Express**: For building scalable and modular APIs.
+- **MARIADB**: For secure and efficient data storage.
+- **FastAPI**: For high-performance backend services.
+- **OPENCV & Tensorflow**: For Machine Learning.
+
+### Frontend
+- **Svelte & TypeScript**: For building a responsive and user-friendly dashboard.
+- **TailwindCSS**: For modern and customizable UI components.
+
+### Tools & Infrastructure
+- **GitHub Workflows**: Automatically deploys backend and frontend code after each commit.
+- **Public Reverse Proxy**: Ensures secure and reliable access to the system.
+- **HDD Storage**: Economical cold storage for large datasets (e.g., 1.8TB for a typical school setup).
+
+---
+
+## How It Works 🔍
+
+1. **Facial Recognition**: The system captures and verifies attendee identities using on-device AI and backend rechecks.
+2. **RFID Integration**: Attendees can also check in using RFID cards for added convenience.
+3. **Real-time Monitoring**: Administrators can track attendance in real-time through the Attendora dashboard.
+4. **Fraud Detection**: The system flags and notifies administrators of any fraudulent attempts.
+5. **Data Analysis**: Attendance data is securely stored and can be analyzed for insights.
+
+---
+
+## Storage needs Case Study: ENSAM Casablanca 🏫
+
+- **Image Size**: 2MB
+- **Class Size**: 90 students max
+- **Number of Classes**: 25
+- **Sessions per Week**: 12
+
+### Storage Calculation
+Using the formula:
+size_video × size_class × num_classes × num_sessions × 32 (weeks studied)
+
+Copy
+The system requires approximately **1.8TB to 2TB** of storage, which can be handled using economical HDD disks.
+
+---
+
+## What Sets Us Apart ✨
+
+- **AI-Powered Facial Recognition**: Ensures accurate and fraud-resistant attendance tracking.
+- **Scalable Architecture**: Designed to handle large-scale deployments with ease.
+- **Secure Infrastructure**: Built with industry-standard security measures to protect data and prevent unauthorized access.
 
 ---
 
@@ -80,8 +116,10 @@ Have questions or want to collaborate? Reach out to us:
 ## Acknowledgments 🙏
 
 We'd like to thank all our contributors, supporters, and the open-source community for helping us make Attendora a success. Special thanks to:
-- [List any notable contributors or projects you rely on]
+- **Prfessor BEN TARLA Lahssan** for his ideas and contributions.
+- **Professor ZAZ Ghita** for her guidance and support.
+- **H2U and Ensam Casa**
 
 ---
 
-Made with ❤️ by **Attendora**. Let's make event management better, together! 🚀
+Made with ❤️ by **Attendora**. Let's revolutionize attendance monitoring together! 🚀
